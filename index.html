@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Tree</title>
+</head>
+<body>
+
+<header>
+  <h1>🌳 Focus Tree</h1>
+
+  <div class="header-right">
+    <label class="switch">
+      <input type="checkbox" id="nightToggle">
+      <span class="slider"></span>
+    </label>
+    <span>Night</span>
+
+    <div class="streak">
+      🔥 <span id="streak">0</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- LEFT: TREE -->
+  <section id="visual">
+    <img id="tree">
+    <div id="night-layer"></div>
+  </section>
+
+  <!-- RIGHT -->
+  <section id="right">
+    <div id="controls">
+      <div id="timer">25:00</div>
+
+      <input type="range" id="timeSlider" min="5" max="180" value="25">
+      <p>Session length: <span id="minutes">25</span> min</p>
+
+      <div class="buttons">
+        <button id="start" class="green">Start</button>
+        <button id="pause" class="yellow">Pause</button>
+        <button id="reset" class="red">Reset</button>
+      </div>
+
+      <p id="status">Ready 🌱</p>
+    </div>
+
+    <div id="tasks">
+      <h3>📝 Tasks</h3>
+      <input id="taskInput" placeholder="Add a task">
+      <button id="addTask">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+  </section>
+</main>
+
+<canvas id="confetti"></canvas>
+
+</body>
+</html>
